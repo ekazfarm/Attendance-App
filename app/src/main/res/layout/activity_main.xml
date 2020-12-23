@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ripplebackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:rb_color="@android:color/white"
+    app:rb_radius="32dp"
+    app:rb_rippleAmount="6"
+    app:rb_duration="2000"
+    app:rb_scale="6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvgetin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GetIn"
+        android:textColor="@android:color/white"
+        android:textSize="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"/>
+    <TextView
+        android:id="@+id/tvscanning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scanning..."
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/tvgetin"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAbsen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_baseline_person_pin_circle_24"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tvabsensukses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Absen Sukses"
+        android:textSize="14sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="120dp"
+        android:paddingEnd="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/bg_absen_sukses"
+        android:visibility="gone"/>
+
+
+
+</com.skyfishjy.library.RippleBackground>
